@@ -1,0 +1,130 @@
+.MainContent{
+    width: 100%;
+}
+.MainContent_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+.MainContent_components{
+    width: 30%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    gap: 2rem;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+    -webkit-box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+    -moz-box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+
+}
+.MainContent_objects{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.MainContent_objects > h1{
+    color: #67748e;
+    font-size: 2rem;
+}
+.MainContent_stats_income{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.MainContent_stats_income > p{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+.show_percentage{
+    font-size: 1.2rem;
+    color: #2da966;
+}
+.icon{
+    font-size: 3.2rem !important;
+    color: #6850ff;
+}
+
+@media screen and (max-width: 642px) {
+    .MainContent_container{
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+    }
+    .MainContent_components{
+        width: 100%;
+        border-radius: 10px;
+
+    }
+    .MainContent_objects > h1{
+        font-size: 0.95rem;
+    }
+    .MainContent_stats_income > p{
+        font-size: 1rem;
+    }
+    .show_percentage{
+        font-size: 0.85rem;
+    }
+    .icon{
+        font-size: 1.5rem !important;
+    }
+}
+@media screen and (max-width: 1007px) and (min-width: 642px) {
+    .MainContent_container{
+        padding: 1.3rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .MainContent_components{
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+    .MainContent_objects{
+        gap: 2.5rem;
+    }
+    .MainContent_objects > h1{
+        font-size: 0.95rem;
+    }
+    .MainContent_stats_income > p{
+        font-size: 1rem;
+    }
+    .show_percentage{
+        font-size: 0.85rem;
+
+    }
+    .icon{
+        font-size: 1.5rem !important;
+    }
+}
+@media screen and  (min-width: 1009px) and (max-width: 2400px){
+ .MainContent_container{
+        padding: 1rem 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .MainContent_components{
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+    .MainContent_objects{
+        gap: 2rem;
+    }
+    .MainContent_objects > h1{
+        font-size: 1rem;
+    }
+    .MainContent_stats_income > p{
+        font-size: 1.1rem;
+    }
+    .show_percentage{
+        font-size: 0.85rem;
+    }
+    .icon{
+        font-size: 1.5rem !important;
+    }
+}

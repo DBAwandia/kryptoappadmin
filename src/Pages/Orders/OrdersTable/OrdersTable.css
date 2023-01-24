@@ -1,0 +1,113 @@
+.Orderstable{
+    width: 100%;
+    height: 70vh;
+    padding: var(--padding-main);
+
+}
+.banned{
+    color: #ff4f4f !important;
+}
+.action_buttons{
+    cursor: pointer;
+}
+.Orderstable > h1{
+    text-align: center;
+    color: #81858c;
+    font-size: 2rem;
+}
+.datagrid{
+    width: 100% !important;
+    flex: 1 !important;
+    height: 60%;
+}
+.datagrid_items{
+    font-size: 1.5rem !important;
+    outline: none !important;
+}
+@media screen and (max-width: 642px) {
+    .Orderstable{
+        width: 100% !important;
+        padding: 10px;
+        margin-top: 5%; 
+    }
+    .Orderstable > h1{
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+    }
+    .datagrid{
+        height: 95%;
+    }
+    .info{
+        width: 60px;
+        border-radius: 5px;
+        height: 32px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: #bcc4fc;
+    }
+    .datagrid_items{
+        font-size: 0.95rem !important;
+    }
+}
+
+@media screen and (max-width: 1007px) and (min-width: 642px) {
+    .Orderstable{
+        width: 100% !important;
+        padding: 10px;
+        margin-top: 10%; 
+    }
+    .Orderstable > h1{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        letter-spacing: 2px;
+    }
+    .datagrid{
+        height: 65%;
+    }
+    .info{
+        width: 60px;
+        border-radius: 5px;
+        height: 35px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: #bcc4fc;
+    }
+    .datagrid_items{
+        font-size: 0.95rem !important;
+    }
+}
+
+@media screen and  (min-width: 1009px) and (max-width: 2400px){
+    .Orderstable{
+        width: 100% !important;
+        padding: 10px;
+        margin-top: -18%; 
+    }
+    .Orderstable > h1{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        letter-spacing: 2px;
+    }
+    .datagrid{
+        height: 90%;
+    }
+    .info{
+        width: 60px;
+        border-radius: 5px;
+        height: 35px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: #bcc4fc;
+    }
+    .datagrid_items{
+        
+        font-size: 0.95rem !important;
+    }
+}

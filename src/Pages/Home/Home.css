@@ -1,0 +1,143 @@
+.Home{
+    width: 100%;
+    position: relative;
+    background-color: #f8f6f6;
+}
+.side_bars{
+    display: none;
+}
+.sidebars_shadow{
+    display: none;
+}
+.toggle_component{
+    display: none;
+    width: 100%;
+}
+
+.Home_navbar{
+    width: 100%;
+    height: 11vh;
+    box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+    -webkit-box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+    -moz-box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+}
+.Sidebar_Maincontent{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+}
+.side_bar{
+    background-color: #fdfcfc;
+    width: 30%;
+    height: 100vh;
+    box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+    -webkit-box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+    -moz-box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+}
+.main_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.Monthly_chart_content{
+    padding: 1.5rem 0px;
+    margin: 1rem 2rem;
+    border-radius: 20px;
+    background-color: #ffffff ;
+    box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+    -webkit-box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+    -moz-box-shadow: 2px 4px 9px -3px rgba(5,1,1,0.15);
+}
+
+@media screen and (max-width: 642px) {
+    .toggle_component{
+        display: block;
+    }
+    .sidebars_shadow{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0,0.94);
+        z-index: 9999999;
+        display: block;
+    
+    }
+    
+    .side_bars{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 80%;
+        height: 100%;
+        z-index: 999999999999999999;
+        background-color: #f8f8f6;
+    }
+    .side_bar{
+        display: none;
+    }
+    .Home_navbar{
+        height: 8vh;
+    }
+    .main_content{
+        width: 100%;
+    }
+    .main_content{
+        width: 100%;
+    }
+    .Monthly_chart_content{
+        padding: 0.5rem 0px;
+        margin: 0.2rem 0.2rem;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 1007px) and (min-width: 642px) {
+    .toggle_component{
+        display: block;
+    }
+    .sidebars_shadow{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0,0.94);
+        z-index: 9999999;
+        display: block;
+    
+    }
+    .main_content{
+        width: 100%;
+        height: 100%;
+    }
+    .side_bars{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        background-color: #f8f8f6;
+        bottom: 0;
+        z-index: 999999999999999999;
+    }
+    .side_bar{
+        display: none;
+    }
+    .Home_navbar{
+        height: 9.4vh;
+    }
+    .Monthly_chart_content{
+        padding: 1rem 0px;
+        margin: 0.2rem 0.8rem;
+        border-radius: 10px;
+    }
+}
+

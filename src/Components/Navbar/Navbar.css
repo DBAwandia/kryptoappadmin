@@ -1,0 +1,118 @@
+.MainPageNav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+}
+.dehaze{
+    display: none;
+}
+.MainPageNav_lists{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.person_nav{
+    font-size: 3.2rem !important;
+    color: #81858c !important;
+}
+.icon_nav{
+    font-size: 3.2rem !important;
+    color: #81858c !important;
+}
+.MainPageNav_lists > p{
+    color: #81858c !important;
+    font-size: 2rem;
+}
+.MainPageNav_lists > b{
+    color: #121214;
+    font-size: 2.2rem;
+    cursor: text;
+}
+.MainPageNav_lists > span{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: text;
+    color: #7387ff;
+    letter-spacing: 1.5px;
+
+}
+.MainPageNav_lists > p:hover{
+    color: #fab246 !important;
+}
+.icon_nav:hover{
+    color: #fab246 !important;
+}
+
+@media screen and (max-width: 642px) {
+    .MainPageNav{
+        padding: 1rem 0.5rem;
+    }
+    .icon_nav{
+        font-size: 1.5rem !important;
+    }
+    .MainPageNav_lists{
+        gap: 0.3rem !important;
+    }
+    .MainPageNav_lists > p{
+        font-size: 0.5rem;
+        display: none;
+    }
+    .MainPageNav_lists > span{
+        font-size: 1.1rem;
+
+    }
+    .dehaze{
+        display: block;
+    }
+    .MainPageNav_lists > b{
+        font-size: 1rem;
+        cursor: text;
+        display: none;
+    }
+}
+@media screen and (max-width: 1007px) and (min-width: 642px) {
+    .MainPageNav{
+        padding: 2rem 1rem;
+    }
+    .icon_nav{
+        font-size: 1.5rem !important;
+    }
+    .MainPageNav_lists > span{
+        font-size: 1.1rem;
+
+    }
+    .MainPageNav_lists > p{
+        font-size: 0.95rem;
+    }
+    .dehaze{
+        display: block;
+    }
+    .MainPageNav_lists > b{
+        font-size: 1rem;
+        cursor: text;
+        display: none;
+    }
+}
+@media screen and  (min-width: 1009px) and (max-width: 2400px){
+    .MainPageNav{
+        padding: 2rem 1rem;
+    }
+    .icon_nav{
+        font-size: 1.5rem !important;
+    }
+    .MainPageNav_lists > span{
+        font-size: 1.1rem;
+
+    }
+    .MainPageNav_lists > p{
+        font-size: 0.95rem;
+    }
+    .MainPageNav_lists > b{
+        font-size: 1rem;
+        cursor: text;
+    }
+}

@@ -1,0 +1,97 @@
+.responsiveContainer{
+    width: 100% !important;
+    height: 70vh !important;
+}
+.lineChart{
+    width: 100% !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+}
+.cartesianGrid{
+    display: none !important;
+    background-color: transparent;
+}
+.x-axis{
+    padding: 1rem !important;
+}
+.y-axis{
+    padding: 1rem !important;
+}
+.line{
+    font-size: 3rem !important;
+}
+@media screen and (max-width: 642px) {
+    .responsiveContainer{
+        width: 100% !important;
+        height: 50vh !important;
+
+    }
+    .lineChart{
+        width: 100% !important;
+        font-size: 0.75rem !important;
+        font-weight: bold !important;
+    }
+    .cartesianGrid{
+        display: none !important;
+        background-color: transparent;
+    }
+    .x-axis{
+        padding: 0.2rem !important;
+    }
+    .y-axis{
+        padding: 0.2rem !important;
+    }
+    .line{
+        font-size: 0.55rem !important;
+    }
+}
+
+@media screen and (max-width: 1007px) and (min-width: 642px) {
+    .responsiveContainer{
+            width: 100% !important;
+            height: 50vh !important;
+    }
+    .lineChart{
+        width: 100% !important;
+        font-size: 0.75rem !important;
+        font-weight: bold !important;
+    }
+    .cartesianGrid{
+        display: none !important;
+        background-color: transparent;
+    }
+    .x-axis{
+        padding: 0.2rem !important;
+    }
+    .y-axis{
+        padding: 0.2rem !important;
+    }
+    .line{
+        font-size: 0.75rem !important;
+    }
+}
+@media screen and  (min-width: 1009px) and (max-width: 2400px){
+    .responsiveContainer{
+        width: 80% !important;
+        height: 50vh !important;
+
+    }
+    .lineChart{
+        width: 100% !important;
+        font-size: 0.90rem !important;
+        font-weight: bold !important;
+    }
+    .cartesianGrid{
+        display: none !important;
+        background-color: transparent;
+    }
+    .x-axis{
+        padding: 0.5rem !important;
+    }
+    .y-axis{
+        padding: 0.5rem !important;
+    }
+    .line{
+        font-size: 0.85rem !important;
+    }
+}
