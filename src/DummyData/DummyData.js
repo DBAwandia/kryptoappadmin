@@ -1,3 +1,4 @@
+
 export const data = [
     {
       name: 'Jan',
@@ -30,38 +31,30 @@ export const data = [
   ];
 
   export const userDataColumns = [
+    // {
+    //   field: '_id',
+    //   headerName: 'ID',
+    //   minWidth: 95,
+    //   flex: 1
+    // },
       {
-        field: 'firstName',
-        headerName: 'First name',
+        field: 'username',
+        headerName: 'Username',
         minWidth: 95,
         flex: 1
       },
       {
-        field: 'lastName',
-        headerName: 'Last name',
-        minWidth: 95,
+        field: 'email',
+        headerName: 'Email',
+        minWidth: 150,
         flex: 1
       },
       {
-        field: 'age',
-        headerName: 'Age',
-        minWidth: 40,
-        type: 'number',
-        flex: 1
-      },
-      {
-        field: 'createdAT',
-        headerName: 'Joined',
+        field: 'accountType',
+        headerName: 'Status',
         minWidth: 110,
         flex: 1
       },
-      {
-        field: 'status',
-        headerName: 'Status',
-        minWidth: 95,
-        flex: 1
-
-      }
   ]
 
   export const userDataRows = [
