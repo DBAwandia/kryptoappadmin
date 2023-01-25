@@ -37,7 +37,9 @@ function Login() {
 
     }catch(err){
       dispatch({type :"LOGIN_FAIL" })
-      toast.error(err.response.data.msg)
+      toast.error("Not an admin, contact developer")
+
+      // toast.error(err.response.data.msg)
     }
   }
 
@@ -70,7 +72,7 @@ function Login() {
         </div>
 
         <div className='login_description'>
-            <p>Login as admin </p>
+            <p>Login as Admin </p>
         </div>
         <div className='login_input'>
             <input type="email" placeholder="Email / username" onChange={(e) => setEmailAndUsername(e.target.value)} />
