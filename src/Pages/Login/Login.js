@@ -20,11 +20,11 @@ function Login() {
     }
   },[password , enable])
   const {  loading  , dispatch} = useContext(LoginContext)
-  const handleLogin = async() =>{
+  const handleLogins = async() =>{
     try{
       dispatch({type: "LOGIN_START"})
       const res = await axiosInstance.post("/Users/login" , { email: emailAndUsername, username: emailAndUsername, password: password})
-      if(res.data.isAdmin){
+      if(res?.data?.isAdmin){
         dispatch({type: "LOGIN_SUCCESS", payload: res.data.details})
         toast.success("Login success")
         setTimeout(()=>{
@@ -35,9 +35,9 @@ function Login() {
         dispatch({type :"LOGIN_FAIL" })
       }
 
-    }catch(err){
+    }catch(error){
       dispatch({type :"LOGIN_FAIL" })
-      toast.error(err.response.data.msg)
+      toast.error(error.response.data.msg)
     }
   }
 
@@ -88,7 +88,7 @@ function Login() {
                     Cancel
             </a>
                 </button>
-            <button className='logins' disabled={enable} onClick={()=>handleLogin()}>{loading ? "Loading..." : "Login"}</button>
+            <button className='logins' disabled={enable} onClick={handleLogins}>{loading ? "Loading..." : "Login"}</button>
         </div>
 
         {/* <div className='forget_password'>
