@@ -81,9 +81,7 @@ function Login() {
 
 
         <div className='login_button'>
-                <button className='cancelss'onClick={()=>{
-                    navigate("/notuser")
-                }}>
+                <button className='cancelss'>
             <a href="https://kryptoscoin.netlify.app/notuser">
                     Cancel
             </a>
