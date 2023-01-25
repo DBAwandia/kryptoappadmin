@@ -2,7 +2,6 @@ import React , { useEffect,useState } from 'react'
 import "./MainContent.css"
 import { CurrencyExchange, MonetizationOn, PlaylistAddCheckCircle, SupervisedUserCircle } from "@mui/icons-material"
 import { axiosInstance } from '../../baseURL/BaseUrl'
-import shortNum  from "number-shortener"
 
 function MainContent() {
   const [ totalSales, setTotalSales ] = useState([])
@@ -32,7 +31,6 @@ function MainContent() {
     fetchData(URL1)
   }, [URL1])
   let totalsaless = Number(totalSales[0]?.total).toFixed(2)
-  console.log(totalsaless)
   let totalsalesss = Number( totalsaless).toLocaleString("en-us")
 
     //fetch total Users
@@ -82,8 +80,6 @@ function MainContent() {
           fetchData(URL4)
         }, [URL4])
         let todayIncomes = Number(todaySale[0]?.total).toFixed(2)
-  console.log(todayIncomes)
-
         let todayIncomess = Number(todayIncomes).toLocaleString("en-us")
   return (
     <div className='MainContent'>
@@ -106,7 +102,7 @@ function MainContent() {
           <div className='MainContent_objects'>
             <h1>Todays Income</h1>
             <div className='MainContent_stats_income'>
-              <p>${todayIncomess && todayIncomess}</p>
+              <p>${todayIncomess}</p>
               {/* <span className='show_percentage'>+25%</span> */}
             </div>
           </div>
