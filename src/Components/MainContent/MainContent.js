@@ -22,7 +22,7 @@ function MainContent() {
     const fetchData = async(URL1) =>{
       setTotalSales(JSON.parse(localStorage.getItem("url1")))
       try{
-        const totalSale = await axiosInstance.get(URL1)
+        const totalSale = await axiosInstance?.get(URL1)
         localStorage.setItem("url1" , JSON.stringify(totalSale?.data) )
         setTotalSales(totalSale?.data)
       }catch(err){
@@ -32,6 +32,7 @@ function MainContent() {
     fetchData(URL1)
   }, [URL1])
   let totalsaless = Number(totalSales[0]?.total).toFixed(2)
+  console.log(totalsaless)
   let totalsalesss = Number( totalsaless).toLocaleString("en-us")
 
     //fetch total Users
@@ -55,7 +56,7 @@ function MainContent() {
         const fetchData = async(URL3) =>{
           setTotalOrders(JSON.parse(localStorage.getItem("orders")))
           try{
-            const totalSale = await axiosInstance.get(URL3)
+            const totalSale = await axiosInstance?.get(URL3)
             localStorage.setItem("orders" , JSON.stringify(totalSale?.data) )
             setTotalOrders(totalSale?.data)
           }catch(err){
@@ -71,7 +72,7 @@ function MainContent() {
           const fetchData = async(URL4) =>{
             setTodaySale(JSON.parse(localStorage.getItem("todaysal")))
             try{
-              const totalSale = await axiosInstance.get(URL4)
+              const totalSale = await axiosInstance?.get(URL4)
               localStorage.setItem("todaysal" , JSON.stringify(totalSale?.data) )
               setTodaySale(totalSale?.data)
             }catch(err){
@@ -81,6 +82,8 @@ function MainContent() {
           fetchData(URL4)
         }, [URL4])
         let todayIncomes = Number(todaySale[0]?.total).toFixed(2)
+  console.log(todayIncomes)
+
         let todayIncomess = Number(todayIncomes).toLocaleString("en-us")
   return (
     <div className='MainContent'>

@@ -31,15 +31,13 @@ function Login() {
         navigate("/")
         },1500)
       }else{
-        dispatch({type :"LOGIN_FAIL" })
         toast.error("Not an admin, contact developer")
+        dispatch({type :"LOGIN_FAIL" })
       }
 
     }catch(err){
       dispatch({type :"LOGIN_FAIL" })
-      toast.error("Not an admin, contact developer")
-
-      // toast.error(err.response.data.msg)
+      toast.error(err.response.data.msg)
     }
   }
 
