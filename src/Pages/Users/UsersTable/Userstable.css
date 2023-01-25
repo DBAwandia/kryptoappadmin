@@ -48,11 +48,9 @@
         height: 32px;
         font-size: 0.9rem;
         cursor: pointer;
-        font-weight: bolder;
         border: 0px;
         outline: 0px;
-        background-color: #f8e0e0 !important;
-        ;
+        background-color: #bcc4fc;
     }
     .datagrid_items{
         font-size: 0.95rem !important;
@@ -76,7 +74,7 @@
     .info{
         width: 60px;
         border-radius: 5px;
-        height: 35px;
+        height: 32px;
         font-size: 0.9rem;
         cursor: pointer;
         border: 0px;
@@ -105,7 +103,7 @@
     .info{
         width: 60px;
         border-radius: 5px;
-        height: 35px;
+        height: 32px;
         font-size: 0.9rem;
         cursor: pointer;
         border: 0px;
