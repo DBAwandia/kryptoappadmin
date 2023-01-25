@@ -4,7 +4,10 @@
     padding: var(--padding-main);
 
 }
-.banned{
+/* .Long{
+    color: #2da966 !important;
+} */
+.Short{
     color: #ff4f4f !important;
 }
 .action_buttons{

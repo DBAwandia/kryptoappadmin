@@ -1,9 +1,9 @@
 import React,  {useEffect , useState} from 'react'
 import "./Userstable.css"
-import { userDataColumns,userDataRows } from '../../../DummyData/DummyData'
+import { userDataColumns } from '../../../DummyData/DummyData'
 import { DataGrid } from '@mui/x-data-grid';
 import axios from 'axios';
-const rows = userDataRows
+import {axiosInstance} from "../../../baseURL/BaseUrl"
 const columns = userDataColumns
 
 const actionCollumn = [
@@ -25,11 +25,11 @@ const actionCollumn = [
 function Userstable() {
   const [ data, setData ] = useState([])
 
-  const URL = "http://localhost:5000/api/Users/getusers"
+  const URL = "/Users/getusers"
   useEffect(() => {
     const fetchData = async( URL )=>{
       try{
-        const res = await axios.get(URL)
+        const res = await axiosInstance.get(URL)
         setData(res.data)
       }catch(err){
       }
@@ -45,7 +45,7 @@ function Userstable() {
             rowHeight="50px"
             responsive="true"
             className="datagrid_items"
-            getRowClassName={(params) => `${params.row.status}`}
+            getRowClassName={(params) => `${params.row.accountType}`}
             getRowId={(row) => row._id}
             columns={columns.concat(actionCollumn)}
             pageSize={5}

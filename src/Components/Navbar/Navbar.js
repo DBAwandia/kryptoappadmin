@@ -1,7 +1,7 @@
 import { Dehaze, LogoutOutlined,    QrCodeScanner, Telegram } from '@mui/icons-material'
 import { useContext } from 'react'
 import { SidebarContext } from '../../Context/SidebarContext/SidebarContext'
-// import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import "./Navbar.css"
 
 function Navbar() {
@@ -40,11 +40,13 @@ function Navbar() {
       </div>
     </a>
     
+    <Link to="/login">
       <div className='MainPageNav_lists'>
         <LogoutOutlined className='icon_nav'/>
         <p>Logout</p>
       </div>
-      
+    </Link> 
+    
     </div>
   )
 }

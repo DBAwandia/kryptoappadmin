@@ -1,14 +1,12 @@
 import React from 'react'
 import {  ResponsiveContainer, AreaChart, Area,XAxis, Tooltip, } from 'recharts';
 import "./Chart.css"
-import { data } from '../../DummyData/DummyData';
 function Chart() {
-    const datas = data
   return (
     <ResponsiveContainer className="responsiveContainer">
         <AreaChart
           className='lineChart'
-          data={datas}
+          // data={datas}
           margin={{
             top: 5,
             right: 5,
