@@ -93,7 +93,7 @@ function MainContent() {
           <div className='MainContent_objects'>
             <h1>Total Income</h1>
             <div className='MainContent_stats_income'>
-              <p>${totalsalesss}</p>
+              <p>${totalsalesss && totalsalesss}</p>
               {/* <span className='show_percentage'>+55%</span> */}
             </div>
           </div>
@@ -106,7 +106,7 @@ function MainContent() {
           <div className='MainContent_objects'>
             <h1>Todays Income</h1>
             <div className='MainContent_stats_income'>
-              <p>${todayIncomess}</p>
+              <p>${todayIncomess && todayIncomess}</p>
               {/* <span className='show_percentage'>+25%</span> */}
             </div>
           </div>
@@ -119,7 +119,7 @@ function MainContent() {
           <div className='MainContent_objects'>
             <h1>Total Users</h1>
             <div className='MainContent_stats_income'>
-              <p>{totalusers}</p>
+              <p>{totalusers && totalusers}</p>
               {/* <span className='show_percentage'>+5%</span> */}
             </div>
           </div>
@@ -132,7 +132,7 @@ function MainContent() {
           <div className='MainContent_objects'>
             <h1>Total orders</h1>
             <div className='MainContent_stats_income'>
-              <p>{totalorders}</p>
+              <p>{totalorders && totalorders}</p>
               {/* <span className='show_percentage'>-55%</span> */}
             </div>
           </div>
