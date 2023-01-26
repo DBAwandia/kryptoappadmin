@@ -1,0 +1,172 @@
+.PageNotFound{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.PageNotFound_container{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.pagenotfound_icon{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 8%;
+    cursor: pointer;
+    margin-left: 5%;
+}
+.pagenotfound_icon > p{
+    font-size: 3rem;
+}
+.icons{
+    font-size: 3.5rem !important;
+    color: black !important;
+}
+.pagenotfound_body{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.pagenotfound_body > p{
+    font-size: 15rem;
+    color: #ff4f4f ;
+    letter-spacing: 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pagenotfound_body > span{
+    font-size: 5rem;
+    color: #8f909b;
+}
+@media screen and (max-width: 642px) {
+    .PageNotFound_container{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 10%;
+    }
+    .pagenotfound_icon{
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        margin-top: 2%;
+        cursor: pointer;
+        margin-left: 6%;
+    }
+    .pagenotfound_icon > p{
+        font-size: 0.95rem;
+    }
+    .icons{
+        font-size: 1.5rem !important;
+        color: black !important;
+    }
+    .pagenotfound_body{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 20%;
+    }
+    .pagenotfound_body > p{
+        font-size: 4rem;
+        color: #ff4f4f ;
+        letter-spacing: 2px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .pagenotfound_body > span{
+        font-size: 0.95rem;
+        color: #8f909b;
+    }
+}
+@media screen and (max-width: 1007px) and (min-width: 642px) {
+  .PageNotFound_container{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 10%;
+    }
+    .pagenotfound_icon{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 2%;
+        cursor: pointer;
+        margin-left: 6%;
+    }
+    .pagenotfound_icon > p{
+        font-size: 0.95rem;
+    }
+    .icons{
+        font-size: 1.5rem !important;
+        color: black !important;
+    }
+    .pagenotfound_body{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 20%;
+    }
+    .pagenotfound_body > p{
+        font-size: 7rem;
+        color: #ff4f4f ;
+        letter-spacing: 2px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .pagenotfound_body > span{
+        font-size: 0.95rem;
+        color: #8f909b;
+    }
+}
+@media screen and  (min-width: 1009px) and (max-width: 2400px){
+  .PageNotFound_container{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 10%;
+    }
+    .pagenotfound_icon{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0;
+        cursor: pointer;
+        margin-left: 6%;
+    }
+    .pagenotfound_icon > p{
+        font-size: 0.95rem;
+    }
+    .icons{
+        font-size: 1.5rem !important;
+        color: black !important;
+    }
+    .pagenotfound_body{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .pagenotfound_body > p{
+        font-size: 4rem;
+        color: #ff4f4f ;
+        letter-spacing: 2px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .pagenotfound_body > span{
+        font-size: 0.95rem;
+        color: #8f909b;
+    }
+}

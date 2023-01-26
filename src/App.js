@@ -5,6 +5,7 @@ import { LoginContext } from "./Context/LoginContext/LoginContext";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import Orders from "./Pages/Orders/Orders";
+import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 import Users from "./Pages/Users/Users";
  
 function App() {
@@ -26,7 +27,7 @@ function App() {
           <Route path="/users" element={<ProtectedRoute><Users/></ProtectedRoute>} />
           <Route path="/orders" element={<ProtectedRoute><Orders/></ProtectedRoute>} />
           <Route path="/login" element={<Login/>} />
-          
+          <Route path='*' element={<PageNotFound/>} />
         </Routes>
       </Router>
       

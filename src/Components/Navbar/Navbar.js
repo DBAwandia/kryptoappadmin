@@ -40,8 +40,10 @@ function Navbar() {
       </div>
     </a>
     
-    <Link to="/login">
-      <div className='MainPageNav_lists'>
+    <Link to="/login"onClick={()=>{
+        dispatch({type: "LOGOUT"})
+      }}>
+      <div className='MainPageNav_lists' >
         <LogoutOutlined className='icon_nav'/>
         <p>Logout</p>
       </div>
