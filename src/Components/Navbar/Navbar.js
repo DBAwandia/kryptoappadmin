@@ -6,6 +6,7 @@ import "./Navbar.css"
 
 function Navbar() {
   const { dispatch } = useContext(SidebarContext)
+
   const toggleSideBar = () =>{
     dispatch({type: "OPEN"})
   }

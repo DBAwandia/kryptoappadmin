@@ -4,27 +4,14 @@ import { userDataColumns } from '../../../DummyData/DummyData'
 import { DataGrid } from '@mui/x-data-grid';
 import axios from 'axios';
 import {axiosInstance} from "../../../baseURL/BaseUrl"
+import { useNavigate } from 'react-router-dom';
 const columns = userDataColumns
 
-const actionCollumn = [
-{
-  field: 'actions',
-  headerName: 'Actions',
 
-  renderCell: (params)=>{
-
-    return <div className='action_buttons'>
-      <button className='info'>View</button>
-    </div>
-
-  },
-  width: 90,
-}
-]
 
 function Userstable() {
   const [ data, setData ] = useState([])
-
+  const navigate = useNavigate()
   const URL = "/Users/getusers"
   useEffect(() => {
     const fetchData = async( URL )=>{
@@ -36,6 +23,26 @@ function Userstable() {
     }
     fetchData(URL)
   }, [URL])
+
+  const actionCollumn = [
+    {
+      field: 'actions',
+      headerName: 'Actions',
+    
+      renderCell: (params)=>{
+        const handleClick = (username , status) =>{
+          navigate("/modifyuser" , { state:{ username , status}})
+        }
+        return <div className='action_buttons'>
+          <button className='info'
+          onClick={()=>handleClick(params.row.username , params.row.accountType)}
+          >View</button>
+        </div>
+    
+      },
+      width: 90,
+    }
+    ]
   return (
     <div className='Userstable'>
       <h1>ALL USERS</h1>

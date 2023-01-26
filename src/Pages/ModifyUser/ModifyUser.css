@@ -1,0 +1,252 @@
+.ModifyUser{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+.ModifyUser_container{
+    width: 100%;
+}
+.action_container{
+    border-top: 0.5px solid rgba(209, 206, 206,0.05);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.action_container > h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.image_container{
+    width: 100%;
+    height: 100%;
+}
+.image_container > {
+    font-size: 0.95rem;
+}
+.image{
+    width: 50%;
+    height: 30%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.image_actions{
+    margin-left: 45%;
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.ban{
+    width: 60px;
+    border-radius: 5px;
+    height: 32px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 0px;
+    outline: 0px;
+    background-color: #fcc1c1;
+} .unBan{
+    width: 60px;
+    border-radius: 5px;
+    height: 32px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 0px;
+    outline: 0px;
+    background-color: rgb(201, 252, 201);
+} .delete{
+    width: 60px;
+    border-radius: 5px;
+    height: 32px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 0px;
+    outline: 0px;
+    background-color: #bcc4fc;
+}
+@media screen and (max-width: 642px) {
+    .action_container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .action_container > h1{
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    .image_container{
+        width: 100%;
+        height: 100%;
+    }
+    .image{
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+    .image_actions{
+        margin-left: 20%;
+        margin-top: 20%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .ban{
+        width: 60px;
+        border-radius: 5px;
+        height: 32px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: #fcc1c1;
+    } .unBan{
+        width: 60px;
+        border-radius: 5px;
+        height: 32px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: rgb(201, 252, 201);
+    } .delete{
+        width: 60px;
+        border-radius: 5px;
+        height: 32px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: #bcc4fc;
+    }
+}
+
+@media screen and (max-width: 1007px) and (min-width: 642px) {
+    .action_container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .action_container > h1{
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    .image_container{
+        width: 100%;
+        height: 100%;
+    }
+    .image{
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+    .image_actions{
+        margin-left: 31%;
+        margin-top: 20%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap:4rem;
+    }
+    .ban{
+        width: 60px;
+        border-radius: 5px;
+        height: 32px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: #fcc1c1;
+    } .unBan{
+        width: 60px;
+        border-radius: 5px;
+        height: 32px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: rgb(201, 252, 201);
+    } .delete{
+        width: 60px;
+        border-radius: 5px;
+        height: 32px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: #bcc4fc;
+    }
+}
+
+@media screen and  (min-width: 1009px) and (max-width: 2400px){
+    .action_container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .action_container > h1{
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    .image_container{
+        width: 100%;
+        height: 100%;
+    }
+    .image{
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+    .image_actions{
+        margin-left: 35%;
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+    .ban{
+        width: 60px;
+        border-radius: 5px;
+        height: 32px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: #fcc1c1;
+    } .unBan{
+        width: 60px;
+        border-radius: 5px;
+        height: 32px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: rgb(201, 252, 201);
+    } .delete{
+        width: 60px;
+        border-radius: 5px;
+        height: 32px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: 0px;
+        outline: 0px;
+        background-color: #bcc4fc;
+    }
+}

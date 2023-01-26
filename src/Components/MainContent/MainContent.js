@@ -70,7 +70,7 @@ function MainContent() {
           const fetchData = async(URL4) =>{
             setTodaySale(JSON.parse(localStorage.getItem("todaysal")))
             try{
-              const totalSale = await axiosInstance?.get(URL4)
+              const totalSale = await axiosInstance.get(URL4)
               localStorage.setItem("todaysal" , JSON.stringify(totalSale?.data) )
               setTodaySale(totalSale?.data)
             }catch(err){
@@ -79,6 +79,7 @@ function MainContent() {
           }
           fetchData(URL4)
         }, [URL4])
+        console.log(todaySale)
         let todayIncomes = Number(todaySale[0]?.total).toFixed(2)
         let todayIncomess = Number(todayIncomes).toLocaleString("en-us")
   return (
@@ -102,7 +103,7 @@ function MainContent() {
           <div className='MainContent_objects'>
             <h1>Todays Income</h1>
             <div className='MainContent_stats_income'>
-              <p>${todayIncomess}</p>
+              <p>5000</p>
               {/* <span className='show_percentage'>+25%</span> */}
             </div>
           </div>
