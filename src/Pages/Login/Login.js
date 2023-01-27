@@ -73,7 +73,7 @@ function Login() {
             <p>Login as Admin </p>
         </div>
         <div className='login_input'>
-            <input type="text" placeholder="waddah" onChange={(e) => setEmailAndUsername(e.target.value)} />
+            <input type="email" placeholder="waddah" onChange={(e) => setEmailAndUsername(e.target.value)} />
         </div>
         <div className='login_input'>
             <input type="text" placeholder="123456q" className='Password' onChange={(e) => setPassword(e.target.value)} />
