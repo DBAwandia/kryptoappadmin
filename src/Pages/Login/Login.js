@@ -83,7 +83,7 @@ function Login() {
         <div className='login_button'>
                 <button className='cancelss'>
             <a href="https://kryptoscoin.netlify.app/notuser">
-                    Cancel
+                    Client Login
             </a>
                 </button>
             <button className='logins' disabled={enable} onClick={handleLogins}>{loading ? "Loading..." : "Login"}</button>
