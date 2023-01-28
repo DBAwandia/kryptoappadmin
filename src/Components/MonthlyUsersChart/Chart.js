@@ -2,11 +2,32 @@ import React from 'react'
 import {  ResponsiveContainer, AreaChart, Area,XAxis, Tooltip, } from 'recharts';
 import "./Chart.css"
 function Chart() {
+  const data=[
+    {
+      amt: 3000
+    },
+    {
+      amt: 2500
+    }, {
+      amt: 300
+    }, {
+      amt: 1600
+    }, {
+      amt: 4000
+    }, {
+      amt: 1000
+    }, {
+      amt: 700
+    }, {
+      amt: 9000
+    }
+  ]
+
   return (
     <ResponsiveContainer className="responsiveContainer">
         <AreaChart
           className='lineChart'
-          // data={datas}
+          data={data}
           margin={{
             top: 5,
             right: 5,

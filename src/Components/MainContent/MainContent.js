@@ -104,11 +104,11 @@ function MainContent() {
             <h1>Todays Income</h1>
             <div className='MainContent_stats_income'>
               <p>$5000</p>
-              <span className='show_percentage'>+3%</span>
+              <span className='show_percentages'>-3%</span>
             </div>
           </div>
           <div className='MainContent_icon'>
-            <CurrencyExchange  className='icon'/>
+            <MonetizationOn className='icon'/>
           </div>
         </div>
 
@@ -130,7 +130,7 @@ function MainContent() {
             <h1>Total orders</h1>
             <div className='MainContent_stats_income'>
               <p>{totalorders && totalorders}</p>
-              <span className='show_percentages'>-13%</span>
+              <span className='show_percentage'>+13%</span>
             </div>
           </div>
           <div className='MainContent_icon'>

@@ -23,6 +23,7 @@
 }
 .monthly_chart{
     width: 100%;
+
 }
 @media screen and (max-width: 642px) {
     .MonthlyUsersChart_container{

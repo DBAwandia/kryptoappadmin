@@ -40,7 +40,7 @@ function Home() {
               <div className='main_content'>
                 <MainContent />
               <div className='Monthly_chart_content'>
-                {/* <MonthlyUsersChart /> */}
+                <MonthlyUsersChart />
               </div>
               
               </div>

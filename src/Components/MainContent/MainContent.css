@@ -44,10 +44,12 @@
 .show_percentage{
     font-size: 1.2rem;
     color: #2da966;
+    font-weight: bold;
 }
 .show_percentages{
     font-size: 1.2rem;
     color: #ff4f4f;
+    font-weight: bold;
     
 }
 .icon{
