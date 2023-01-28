@@ -45,6 +45,11 @@
     font-size: 1.2rem;
     color: #2da966;
 }
+.show_percentages{
+    font-size: 1.2rem;
+    color: #ff4f4f;
+    
+}
 .icon{
     font-size: 3.2rem !important;
     color: #6850ff;
@@ -67,6 +72,9 @@
         font-size: 1rem;
     }
     .show_percentage{
+        font-size: 0.85rem;
+    }
+    .show_percentages{
         font-size: 0.85rem;
     }
     .icon{
@@ -97,6 +105,9 @@
         font-size: 0.85rem;
 
     }
+    .show_percentages{
+        font-size: 0.85rem;
+    }
     .icon{
         font-size: 1.5rem !important;
     }
@@ -122,6 +133,9 @@
         font-size: 1.1rem;
     }
     .show_percentage{
+        font-size: 0.85rem;
+    }
+    .show_percentages{
         font-size: 0.85rem;
     }
     .icon{

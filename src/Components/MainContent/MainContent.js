@@ -91,7 +91,7 @@ function MainContent() {
             <h1>Total Income</h1>
             <div className='MainContent_stats_income'>
               <p>${totalsalesss && totalsalesss}</p>
-              {/* <span className='show_percentage'>+55%</span> */}
+              <span className='show_percentage'>+55%</span>
             </div>
           </div>
           <div className='MainContent_icon'>
@@ -103,8 +103,8 @@ function MainContent() {
           <div className='MainContent_objects'>
             <h1>Todays Income</h1>
             <div className='MainContent_stats_income'>
-              <p>5000</p>
-              {/* <span className='show_percentage'>+25%</span> */}
+              <p>$5000</p>
+              <span className='show_percentage'>+3%</span>
             </div>
           </div>
           <div className='MainContent_icon'>
@@ -117,7 +117,7 @@ function MainContent() {
             <h1>Total Users</h1>
             <div className='MainContent_stats_income'>
               <p>{totalusers && totalusers}</p>
-              {/* <span className='show_percentage'>+5%</span> */}
+              <span className='show_percentages'>-9%</span>
             </div>
           </div>
           <div className='MainContent_icon'>
@@ -130,7 +130,7 @@ function MainContent() {
             <h1>Total orders</h1>
             <div className='MainContent_stats_income'>
               <p>{totalorders && totalorders}</p>
-              {/* <span className='show_percentage'>-55%</span> */}
+              <span className='show_percentages'>-13%</span>
             </div>
           </div>
           <div className='MainContent_icon'>
